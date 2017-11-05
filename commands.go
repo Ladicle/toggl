@@ -51,7 +51,23 @@ var Commands = []cli.Command{
 	{
 		Name:   "projects",
 		Usage:  "Show projects on current workspaces",
-		Action: command.CmdProjects,
+		Subcommands: []cli.Command{
+			{
+				Name:   "show",
+				Usage:  "Show current workspace projects",
+				Action: command.CmdShowProjects,
+			},
+			{
+				Name:   "create",
+				Usage:  "Create current workspace project",
+				Action: command.CmdCreateProject,
+			},
+			{
+				Name:   "delete",
+				Usage:  "Delete project",
+				Action: command.CmdDeleteProject,
+			},
+		},
 	},
 	{
 		Name:   "local",
