@@ -24,33 +24,38 @@ var projectIDFlag = cli.IntFlag{
 
 var Commands = []cli.Command{
 	{
-		Name:   "start",
-		Usage:  "Start time entry",
-		Action: command.CmdStart,
+		Name:    "start",
+		Aliases: []string{"a"},
+		Usage:   "Start time entry",
+		Action:  command.CmdStart,
 		Flags: []cli.Flag{
 			projectIDFlag,
 		},
 	},
 	{
-		Name:   "stop",
-		Usage:  "End time entry",
-		Action: command.CmdStop,
-		Flags:  []cli.Flag{},
+		Name:    "stop",
+		Aliases: []string{"s"},
+		Usage:   "End time entry",
+		Action:  command.CmdStop,
+		Flags:   []cli.Flag{},
 	},
 	{
-		Name:   "current",
-		Usage:  "Show current time entry",
-		Action: command.CmdCurrent,
-		Flags:  []cli.Flag{},
+		Name:    "current",
+		Aliases: []string{"c"},
+		Usage:   "Show current time entry",
+		Action:  command.CmdCurrent,
+		Flags:   []cli.Flag{},
 	},
 	{
-		Name:   "workspaces",
-		Usage:  "Show workspaces",
-		Action: command.CmdWorkspaces,
+		Name:    "workspaces",
+		Aliases: []string{"w"},
+		Usage:   "Show workspaces",
+		Action:  command.CmdWorkspaces,
 	},
 	{
-		Name:   "projects",
-		Usage:  "Show projects on current workspaces",
+		Name:    "project",
+		Aliases: []string{"p"},
+		Usage:   "Options for projects",
 		Subcommands: []cli.Command{
 			{
 				Name:   "show",
