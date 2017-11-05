@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/sachaos/toggl/command"
+	"github.com/Ladicle/toggl/command"
 	"github.com/urfave/cli"
 )
 
