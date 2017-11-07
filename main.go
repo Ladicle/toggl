@@ -31,8 +31,6 @@ func main() {
 	app := cli.NewApp()
 	app.Name = Name
 	app.Version = Version
-	app.Author = "sachaos"
-	app.Email = "sakataku7@gmail.com"
 	app.Usage = "Toggl API CLI Client"
 
 	app.Flags = GlobalFlags
