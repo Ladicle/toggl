@@ -1,11 +1,23 @@
 # toggl CLI client
 
-[toggl](https://toggl.com/) CLI Client, written in Golang.
-
-## Description
-
 [toggl](https://toggl.com/) is a time tracking web application.
 This program will let you use the toggl in CLI.
+
+## Install
+
+Quick install for OSX
+
+```bash
+$ brew tap Ladicle/toggl
+$ brew install toggl
+```
+
+Build yourself
+
+```bash
+$ git clone https://github.com/Ladicle/toggl.git
+$ cd toggl && make install
+```
 
 ## Usage
 
@@ -39,19 +51,7 @@ GLOBAL OPTIONS:
    --version, -v  print the version
 ```
 
-## Install
-
-To install, use `go get`:
-
-```bash
-$ go get -d github.com/sachaos/toggl
-```
-
 ### Register API token
 
 When you run `toggl` first time, you will be asked your toggl API token.
 Please input toggl API token and register it.
-
-## Author
-
-[sachaos](https://github.com/sachaos)
