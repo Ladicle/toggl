@@ -22,21 +22,19 @@ USAGE:
 VERSION:
    0.2.0
 
-AUTHOR(S):
-   sachaos <sakataku7@gmail.com>
-
 COMMANDS:
-     start       Start time entry
-     stop        End time entry
-     current     Show current time entry
-     workspaces  Show workspaces
-     projects    Show projects on current workspaces
-     local       Set current dir workspace
-     global      Set global workspace
-     help, h     Shows a list of commands or help for one command
+     start, a       Start time entry
+     stop, s        End time entry
+     current, c     Show current time entry
+     workspaces, w  Show workspaces
+     project, p     Options for projects
+     local          Set current dir workspace
+     global         Set global workspace
+     help, h        Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
    --cache
+   --csv
    --help, -h     show help
    --version, -v  print the version
 ```
